@@ -9,10 +9,30 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIView *nameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UILabel *pwdLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *pwdTextfield;
+@property (weak, nonatomic) IBOutlet UIButton *loginbtn;
 
 @end
 
 @implementation ViewController
+
+- (IBAction)loginAction:(id)sender {
+    
+    NSLog(@"登录");
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
