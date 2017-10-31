@@ -8,6 +8,11 @@
 
 #import "ViewController.h"
 
+#import "ViewControllerViewModel.h"
+#import "OneView.h"
+
+
+
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIView *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -34,16 +39,49 @@
     
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self configNav];
+    
+    [self creatUI];
+    
+    [self layout];
+    
+    [self getData];
+    
+    
+    
+    
+    
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configNav{}
+- (void)creatUI{
+    
+    OneView*one = [OneView new];
+    
+    one.frame = CGRectMake(0, 0, 100, 100);
+    
+    [self.view addSubview:one];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+- (void)layout{}
+- (void)getData{}
 
 
 @end

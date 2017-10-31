@@ -10,4 +10,18 @@
 
 @implementation ViewControllerViewModel
 
+
+
+- (void)loginSuccess:(void(^)(id json))success
+             failure:(void (^)(NSError *error))failure{
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
 @end
