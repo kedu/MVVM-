@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "ViewControllerModel.h"
+
 typedef void (^myBlock)(int a);
 
 @interface ViewControllerViewModel : NSObject
@@ -19,6 +21,9 @@ typedef void (^myBlock)(int a);
 @property (nonatomic , copy ) NSString * colorStr ;//颜色
 
 @property (nonatomic , assign ) BOOL   btnState ;//按钮状态
+
+
+@property (nonatomic , strong ) ViewControllerModel * model;
 
 
 /// 用户登录 为了减少View对viewModel的状态的监听 这里采用block回调来减少状态的处理
