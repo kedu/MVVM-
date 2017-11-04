@@ -25,6 +25,17 @@
     self.backgroundColor = [UIColor redColor];
     
     
+    
+    _myLabel=[[UITextView alloc]init];
+    _myLabel.text=@"我的文本";
+    _myLabel.textColor=[UIColor blackColor];
+    _myLabel.font=[UIFont systemFontOfSize:(14)];
+    
+    _myLabel.frame = CGRectMake(0, 0, 100, 100);
+    
+    [self addSubview:_myLabel];
+    
+    
 }
 - (void)layout{
     

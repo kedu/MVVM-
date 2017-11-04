@@ -10,4 +10,7 @@
 
 @interface OneView : UIView
 
+
+@property (nonatomic , strong ) UITextView * myLabel ;
+
 @end

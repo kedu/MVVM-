@@ -14,6 +14,8 @@ typedef void (^myBlock)(int a);
 
 @interface ViewControllerViewModel : NSObject
 
+@property (nonatomic , copy ) NSString * string ;//文本
+
 @property (nonatomic , copy ) NSString * userName ;//用户名
 
 @property (nonatomic , copy ) NSString * pwd ;//密码
